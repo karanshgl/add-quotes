@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <new-quote></new-quote>
+  <new-quote @addQuote="newQuote"></new-quote>
   <quote-grid :quotes="quotes"></quote-grid>
 </div>
 </template>
@@ -18,6 +18,11 @@ export default {
     components:{
       quoteGrid: QuoteGrid,
       newQuote: NewQuote
+    },
+    methods:{
+      newQuote(data){
+        this.quotes.push(data);
+      }
     }
 
 }

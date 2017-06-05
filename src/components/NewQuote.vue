@@ -17,7 +17,6 @@
 
 <script>
 export default {
-  props:['quotes'],
   data:function(){
     return {
       quote : ''
@@ -25,7 +24,7 @@ export default {
   },
   methods:{
     createNew(){
-      this.$emit('quoteAdded', this.quote);
+      this.$emit('addQuote', this.quote);
       this.quote='';
     }
   }
