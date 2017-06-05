@@ -33,4 +33,8 @@ export default {
 
 <style>
 
+.form-control{
+  margin: 8px auto;
+}
+
 </style>
