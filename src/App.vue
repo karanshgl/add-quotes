@@ -18,7 +18,7 @@ import Header from './components/Header.vue';
 export default {
   data:function(){
     return {
-        quotes: ['Hello'],
+        quotes: [],
         maxQuotes: 10,
     }},
     components:{
